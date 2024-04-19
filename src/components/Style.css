@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  background-color: blueviolet;
+  padding: 25px 18px;
+  align-items: center;
+  margin: 20px 40px;
+  border-radius: 20px;
+}
+.logo {
+  color: white;
+  transition: all 0.7s;
+}
+.logo:hover {
+  color: yellow;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+.lists ul {
+  display: flex;
+  gap: 28px;
+}
+.lists .links a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.7s;
+}
+.lists .links a:hover {
+  color: yellow;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  transition: all 0.7s;
+}
+.lists .links .active {
+  color: yellow;
+  text-decoration: none;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  transition: all 0.7s;
+}
+.homeBox {
+  background-color: blueviolet;
+  color: white;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0px 4px 40px black;
+  cursor: default;
+  transition: ease-in-out 2s;
+}
+.homeBox:hover {
+  width: 40%;
+  box-shadow: 0px 10px 80px black;
+  transform: translateY(20px);
+  transition: ease-in-out 2s;
+}
+.addStudentsBox {
+  background-color: blueviolet;
+  color: white;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 14px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 40px black;
+}
+.showStudentsBox {
+  background-color: blueviolet;
+  color: white;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+
+  padding: 30px;
+  border-radius: 14px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 40px black;
+}
+.headingOfAddStudents {
+  padding-bottom: 30px;
+  border-bottom: 4px solid white;
+}
+.headingOfShowStudents {
+  padding-bottom: 30px;
+  border-bottom: 4px solid white;
+}
+.addingData {
+  margin-top: 20px;
+  padding: 15px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.inputField {
+  width: 400px;
+  padding: 12px;
+  border-radius: 4px;
+  border: none;
+  transition: ease-in-out 0.2s;
+}
+.inputField:focus {
+  outline: 4px solid rgb(179, 21, 113);
+  box-shadow: 0px 5px 10px rgb(179, 21, 113);
+ 
+
+  transform: translateY(-4px);
+  transition: ease-in-out 0.2s;
+}
+.addBtn {
+  padding: 12px;
+  border-radius: 4px;
+  border: none;
+  background-color: rgb(179, 21, 113);
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: ease-in-out 0.2s;
+}
+.addBtn:hover {
+  background-color: rgb(214, 50, 146);
+  transition: ease-in-out 0.2s;
+}
+.addBtn:active {
+  background-color: rgb(133, 30, 90);
+  transition: ease-in-out 0.2s;
+}
+.showMsg {
+  position: absolute;
+  background-color: white;
+  color: blueviolet;
+  right: 220px;
+  top: 25%;
+
+  padding: 20px;
+  border-radius: 12px;
+  transition: all 3s;
+}
+.studentsList {
+  margin: 15px 0px;
+  border: 2px solid white;
+}
+.studentsList th {
+  width: 150px;
+  padding: 20px;
+  border: 1px solid white;
+  text-align: center;
+  background-color: rgb(214, 50, 146);
+}
+.newRowOfTable td {
+  padding: 15px;
+  border: 1px solid white;
+  text-align: center;
+  font-weight: bold;
+}
+.actionSpace {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.deleteBtn {
+  padding: 10px 40px;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.2s;
+}
+.deleteBtn:hover {
+  background-color: rgb(190, 0, 0);
+  transition: all 0.2s;
+}
+.deleteBtn:active {
+  background-color: rgb(124, 2, 2);
+  transition: all 0.2s;
+}
+
+.editBtn {
+  padding: 10px 40px;
+  cursor: pointer;
+  background-color: rgb(6, 173, 6);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.2s;
+}
+.editBtn:hover {
+  background-color: rgb(2, 143, 2);
+  transition: all 0.2s;
+}
+.editBtn:active {
+  background-color: rgb(2, 87, 2);
+  transition: all 0.2s;
+}
+.emptyBox {
+  display: flex;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  background-color: white;
+  color: blueviolet;
+  right: 380px;
+  top: 24%;
+  width: 600px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px black;
+  transition: all 3s;
+}
